@@ -1,4 +1,8 @@
 # CSV READ FILE
+import csv 
+import pandas as pd
+from time import sleep
+from selenium import webdriver
 
 csv_file = pd.read_csv('File_path', index_col=False)
 for key,value in csv_file.iterrows():
