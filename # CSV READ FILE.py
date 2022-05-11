@@ -4,8 +4,8 @@ import pandas as pd
 from time import sleep
 from selenium import webdriver
 
-csv_file = pd.read_csv('File_path', index_col=False)
-for key,value in csv_file.iterrows():
+csv_file = pd.read_csv('Book1.csv', index_col=False)
+for key,value in csv_file.iterrows()
     account = value['Accounts']
     accounts = account.split(':')
     driver = webdriver.Chrome('chromedriver_path')
